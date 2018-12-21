@@ -2,14 +2,15 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { fetchStreams } from '../../actions'
-import '../../styles/components/Watchlist.scss';
+import '../../styles/components/_grids.scss';
+import '../../styles/components/_cards.scss';
 
 
 class RowOneHeader extends React.Component {
 
     render() {
         return (
-                <div className="container">
+                <div className="container-8-columns">
                     <div className="item item--1">
                     <div className="card">
                         <div className="card__side card__side--front">
