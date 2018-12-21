@@ -1,0 +1,38 @@
+body {
+    background: rgb(204, 204, 204);
+  }
+
+.page-size-a4 {
+    background-image: linear-gradient(
+        to right bottom,
+         rgba(64, 76, 148, 0.90),
+         rgba(0, 24, 168, 0.90)),
+         url('../styles/images/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    letter-spacing: .5px;
+    display: block;
+    margin-left: 5px;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    width: 21cm;
+    height: 29.7cm;
+    padding: 5px;
+  }
+ 
+  @media print {
+    body,
+    page {
+      margin-left: 0;
+      box-shadow: 0;
+    }
+  }
+
+  .main-layout-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+  }

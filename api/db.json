@@ -1,0 +1,52 @@
+{
+  "streams": [
+    {
+      "title": "This is a test",
+      "description": "hello",
+      "id": 1
+    },
+    {
+      "title": "Another Stream",
+      "description": "another stream text",
+      "id": 3
+    },
+    {
+      "title": "hello",
+      "description": "test",
+      "id": 4
+    },
+    {
+      "title": "Rim Stream",
+      "description": "description 23",
+      "id": 5
+    },
+    {
+      "title": "ffdgf",
+      "description": "fdgf",
+      "id": 6
+    },
+    {
+      "title": "gfdg",
+      "description": "dfd",
+      "id": 7
+    },
+    {
+      "title": "Rim Stream",
+      "description": "this is Rim's stream",
+      "userId": "107742213797163945713",
+      "id": 8
+    },
+    {
+      "title": "I creater this stream",
+      "description": "This was made by me",
+      "userId": "107742213797163945713",
+      "id": 9
+    },
+    {
+      "title": "James and Thomas",
+      "description": "testest",
+      "userId": "107742213797163945713",
+      "id": 10
+    }
+  ]
+}

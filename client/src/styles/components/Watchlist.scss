@@ -1,0 +1,56 @@
+.container {
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    }
+
+.item {
+    transition: transform .2s ease-in-out;
+    
+    &:hover {
+        transform: translateY(-3px) scale(1.05);
+        }
+}
+
+// FLIP CARD LOGIC
+.card {
+    text-align: center;
+    color: white;
+    perspective: 20rem;
+    position: relative;
+    height: 5rem;
+    &__side {
+            height: 5rem;
+            transition: transform 0.4s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            backface-visibility: hidden;
+            border-radius: 5px;
+            box-shadow: -5px 5px 35px 3px rgba(0,0,0,0.32);
+            overflow: hidden;
+
+            &--front {
+                background-color: royalblue;
+                opacity: .9;   
+            }
+
+            &--back {
+                transform: rotateY(180deg);
+                &-1 {
+                    background-color: grey;     
+                    opacity: .9;                
+                }
+            }
+    }
+
+    &:active &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:active &__side--back {
+        transform: rotateY(0deg);
+    }    
+}
