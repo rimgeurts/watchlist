@@ -37,8 +37,19 @@ body {
     grid-gap: 5px;
   }
 
+  .header {
+    position: relative;
+  }
+
   .header-logo {
-    background-image:url('../../styles/images/hero.jpg');
-    background-size: cover;
-    background-position: top;
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100px;
+    width: 100px;
+    background-image:url('../../styles/images/db-logo.png');
+    background-size: 40%;
+    //background-size: contain;
+    background-position:top;
+    background-repeat: no-repeat;
   }
