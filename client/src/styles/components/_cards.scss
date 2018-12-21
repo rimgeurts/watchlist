@@ -22,28 +22,42 @@
             width:100%;
             backface-visibility: hidden;
             border-radius: 5px;
-            box-shadow: -5px 5px 35px 3px rgba(0, 0, 0, .5);
+            box-shadow: -5px 5px 35px 3px rgba(0, 0, 0, .4);
             overflow: hidden;
-
-            &--front {
-                background-color: royalblue;
-                opacity: .9;   
-            }
-
-            &--back {
-                transform: rotateX(180deg);
-                &-1 {
-                    background-color: rgb(194, 132, 0);     
-                    opacity: .9;                
+            opacity: 1;
+            // FLIP CARD X-AXIS ROTATION
+            &--front-x {
+                background: linear-gradient(to right bottom, rgb(35, 81, 219),  royalblue);  
+                &:active {
+                    transform: rotateX(-180deg);
                 }
             }
-    }
 
-    &:active &__side--front {
-        transform: rotateX(-180deg);
-    }
+            &--back-x {
+                transform: rotateX(180deg);
+                background-color: rgb(194, 132, 0);                     
+            }  
+         
+            // FLIP CARD Y-AXIS ROTATION
+            &--front-y {
+                background: linear-gradient(to right, royalblue, rgb(53, 96, 223));  
+                
+                &:active {
+                    transform: rotateY(-180deg);
+                }
+            }
 
-    &:active &__side--back {
+            &--back-y {
+                transform: rotateY(180deg);
+                background-color: rgb(194, 132, 0);                     
+            }
+    }
+    
+    &:active &__side--back-x {
         transform: rotateX(0deg);
+    }  
+
+    &:active &__side--back-y {
+        transform: rotateY(0deg);
     }    
 }

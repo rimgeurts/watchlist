@@ -5,7 +5,7 @@ body {
 .page-size-a4 {
     background-image: linear-gradient(
         to right bottom,
-         rgba(64, 76, 148, 0.90),
+         rgba(64, 76, 148, 0.274),
          rgba(0, 24, 168, 0.90)),
          url('../../styles/images/hero.jpg');
     background-size: cover;
@@ -16,7 +16,7 @@ body {
     display: block;
     margin-left: 5px;
     margin-bottom: 0.5cm;
-    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3cm rgba(0, 0, 0, 0.5);
     width: 21cm;
     height: 29.7cm;
     padding: 5px;
@@ -35,4 +35,10 @@ body {
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
     grid-gap: 5px;
+  }
+
+  .header-logo {
+    background-image:url('../../styles/images/hero.jpg');
+    background-size: cover;
+    background-position: top;
   }
