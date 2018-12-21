@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { fetchStreams } from '../../actions'
-import '../../styles/components/_grids.scss';
+import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 
 
