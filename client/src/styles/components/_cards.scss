@@ -9,7 +9,7 @@
 // FLIP CARD LOGIC
 .card {
     text-align: center;
-    color: white;
+    
     perspective: 30rem;
     position: relative;
 
@@ -24,10 +24,10 @@
             border-radius: 5px;
             box-shadow: -5px 5px 35px 3px rgba(0, 0, 0, .4);
             overflow: hidden;
-            opacity: 1;
+            opacity: 0.93;
             // FLIP CARD X-AXIS ROTATION
             &--front-x {
-                background: linear-gradient(to right bottom, rgb(35, 81, 219),  royalblue);  
+                background: rgb(219, 220, 235);
                 &:active {
                     transform: rotateX(-180deg);
                 }
@@ -35,12 +35,12 @@
 
             &--back-x {
                 transform: rotateX(180deg);
-                background-color: rgb(194, 132, 0);                     
+                background-color: rgb(168, 167, 165);                     
             }  
          
             // FLIP CARD Y-AXIS ROTATION
             &--front-y {
-                background: linear-gradient(to right, royalblue, rgb(53, 96, 223));  
+                background: rgb(219, 220, 235);
                 
                 &:active {
                     transform: rotateY(-180deg);
@@ -49,7 +49,8 @@
 
             &--back-y {
                 transform: rotateY(180deg);
-                background-color: rgb(194, 132, 0);                     
+            opacity: 0.9;
+            background-color: rgb(168, 167, 165);                    
             }
     }
     

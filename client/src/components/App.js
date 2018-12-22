@@ -7,8 +7,8 @@ import '../styles/layout/_layout.scss'
 
 const App = () => {
     return (
-        <div class="page-size-a4">
-            <div class="main-layout-container">
+        <div className="page-size-a4">
+            <div className="main-layout-container">
                 <RowZeroHeader />
                 <RowOneHeader />       
 

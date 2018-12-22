@@ -10,7 +10,7 @@ body {
          url('../../styles/images/hero.jpg');
     background-size: cover;
     background-position: top;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 10px;
     letter-spacing: .5px;
     display: block;
@@ -39,16 +39,29 @@ body {
 
   .header {
     position: relative;
+    color:  royalblue;
+  }
+
+  .header-title {
+    position: absolute;
+    left: 300px;
+    top: -10px;
+    font-size: 20rem;
+    font-weight: 400;
+    color: rgb(56, 53, 53);
+    letter-spacing: 1px;
+    font-size: 40px;
   }
 
   .header-logo {
     position: absolute;
-    top: 10px;
-    left: -20px;
+    top: 1rem;
+    left: -6.5rem;;
     height: 100px;
-    width: 100px;
+    width: 300px;
     background-image:url('../../styles/images/db-logo.png');
-    background-size: 40%;
+    background-size: 15%;
+    background-blend-mode: color;
     //background-size: contain;
     background-position:top;
     background-repeat: no-repeat;

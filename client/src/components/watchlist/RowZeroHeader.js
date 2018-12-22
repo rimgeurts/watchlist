@@ -15,12 +15,12 @@ class RowZeroHeader extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--front-x">
-                                <div class="header">
-                                    <div class="header-logo">
-                                        
+                                <div className="header">
+                                    <div className="header-logo">        
                                     </div>
+                                    <h1 className="header-title"> Watchlist </h1>
                                 </div>
-                                <p> Watchlist </p>
+                                
                             </div>
                             <div className="card__side card__side--back card__side--back-x">
                                 Back
