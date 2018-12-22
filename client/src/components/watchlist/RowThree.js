@@ -7,7 +7,7 @@ import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss'
 
 
-class RowZeroHeader extends React.Component {
+class RowThree extends React.Component {
 
     render() {
         return (
@@ -59,4 +59,4 @@ class RowZeroHeader extends React.Component {
     }
 }
 
-export default RowZeroHeader;
+export default RowThree;
