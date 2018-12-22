@@ -11,4 +11,10 @@
     grid-template-columns: 1fr;
     grid-gap: 5px;
     }
-    
+
+.container-3-columns {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    }

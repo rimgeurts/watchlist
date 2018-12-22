@@ -9,12 +9,16 @@
 // FLIP CARD LOGIC
 .card {
     text-align: center;
-    
     perspective: 30rem;
     position: relative;
 
     &__side {
             height: 5rem;
+            
+            &--size-large {
+                height: 10rem;
+            } 
+
             transition: transform 0.4s ease-in-out;
             position: absolute;
             top: 0;
