@@ -16,13 +16,15 @@ const data = [
 
 const options = {
   legend: "none",
-  bar: { groupWidth: "90%" }, // Remove space between bars.
+  bar: { groupWidth: "80%" }, // Remove space between bars.
   candlestick: {
     fallingColor: { strokeWidth: 0, fill: "#a52714" }, // red
     risingColor: { strokeWidth: 0, fill: "royalblue" } // green
   },
   hAxis: {
-    baselineColor: "none",
+    textStyle : {
+        fontSize: 7
+    },
     ticks: []
   },
   vAxis: {
@@ -33,7 +35,9 @@ const options = {
     easing: "linear",
     duration: 501
   },
-  chartArea:{left:0,top:30,width:"100%"}
+  chartArea:{left:1,top:0,width:"100%"},
+  backgroundColor: { fill:'transparent' },
+  tooltip : {trigger: 'none'}
 };
 class Waterfall extends React.Component {
   render() {
@@ -41,8 +45,8 @@ class Waterfall extends React.Component {
       <div className="App">
         <Chart
           chartType="CandlestickChart"
-          width="260px"
-          height="200px"
+          width="261px"
+          height="220px"
           data={data}
           options={options}
         />

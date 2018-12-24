@@ -55,7 +55,7 @@ body {
   .header-logo {
     position: absolute;
     top: 1rem;
-    left: -6.5rem;;
+    left: -6.5rem;
     height: 100px;
     width: 300px;
     background-image:url('../../styles/images/db-logo.png');
@@ -64,4 +64,10 @@ body {
     //background-size: contain;
     background-position:top;
     background-repeat: no-repeat;
+  }
+
+  p{
+    margin-top: 5;
+    margin-bottom: 0;
+    padding:0;
   }
