@@ -6,7 +6,7 @@ import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
-import BarChart from './BarChart';
+import HighLightCommentChart from './HighLightCommentChart';
 
 
 class RowThree extends React.Component {
@@ -29,7 +29,7 @@ class RowThree extends React.Component {
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
                                     <p>Portfolio Development (Net Limits)</p>                                   
-                                    <BarChart /> 
+                                    <HighLightCommentChart /> 
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back

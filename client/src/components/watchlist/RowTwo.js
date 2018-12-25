@@ -6,7 +6,8 @@ import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
-import BarChart from './BarChart';
+import HighLightCommentChart from './HighLightCommentChart';
+import HighLightCommentTable from './HighLightCommentTable';
 
 
 class RowTwo extends React.Component {
@@ -17,7 +18,7 @@ class RowTwo extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                 <p>Watchlist Comments</p>                                   
+                                 <p>Highlight Comments</p>                                   
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
@@ -27,8 +28,11 @@ class RowTwo extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                    <p>Portfolio Development (Net Limits)</p>                                   
-                                    <BarChart /> 
+                                    <p>Sovereign / Sub-sovereign</p>                                   
+                                    <HighLightCommentChart /> 
+                                    <HighLightCommentTable /> 
+                                    
+
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
