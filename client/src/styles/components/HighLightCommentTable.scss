@@ -1,6 +1,6 @@
 .highlight-comment-table-wrapper {
     display: grid;
-    grid-template-columns: .5fr 1fr 1fr 0.7fr;
+    grid-template-columns: 40px 100px 100px 140px;
     grid-template-rows: 10px, 10px 10px;
     column-gap: 0px;
     row-gap: 0px;
@@ -22,28 +22,31 @@
 
     &__header {
         font-weight: bold;
+        &_b {
+            padding-left: 10px;
+        }
+        &_c {
+            padding-left: 35px;
+        }
+        &_d {
+            padding-left: 45px;
+        }
     }
     
     &__box {
 
-      
-      // APPLY PADDING FOR TOP ROW ONLY
-    //   &__a, &__b, &__c, &__d {
-    //     padding-top: 3px;
-    //   }
-
       &__a, &__e  {
-        padding-left: 5px;
+        //padding-left: 5px;
         //padding-left: 3px;
       }
       &__b, &__f  {
-        padding-left: 4px;
+        padding-left: 20px;
       }
       &__c, &__g  {
-        padding-left: 4px;
+        padding-left: 40px;
       }
       &__d, &__h  {
-        padding-left: 4px;
+        padding-left: 59px;
       }
     }
   }
