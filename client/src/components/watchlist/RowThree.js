@@ -7,6 +7,7 @@ import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
 import HighLightCommentChart from './HighLightCommentChart';
+import PortfolioDevelopmentChart from './PortfolioDevelopmentChart';
 
 
 class RowThree extends React.Component {
@@ -18,7 +19,7 @@ class RowThree extends React.Component {
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
                                  <p>Portfolio Development (Net Limits)</p>                                   
-                                 <Waterfall /> 
+                                 <PortfolioDevelopmentChart /> 
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back

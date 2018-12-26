@@ -1,11 +1,11 @@
 .highlight-comment-table-wrapper {
     display: grid;
     grid-template-columns: 40px 100px 100px 140px;
-    grid-template-rows: 10px, 10px 10px;
+    grid-template-rows: 11px 11px 11px;
     column-gap: 0px;
     row-gap: 0px;
-   // background-color: rgba(128, 128, 128, 0.137);
-   // border: 1px solid rgba(128, 128, 128, 0.137);
+    //background-color: rgba(206, 206, 206, 0.993);
+    border: 1px solid rgba(112, 112, 112, 0.767);
     border-radius: 5px;
     margin-top: 0;
     margin-left: 5px;
@@ -14,13 +14,13 @@
     font-size: 80%;
     display: absolute;
     margin-top: 3px;
-    //border: 1px solid grey;
-    //border-radius: 5px;
-    color: rgb(5, 5, 5);
+
+    color: rgb(2, 2, 2);
     
     text-align: left;
 
     &__header {
+        padding-top: 1px;
         font-weight: bold;
         &_b {
             padding-left: 10px;
@@ -37,7 +37,7 @@
 
       &__a, &__e  {
         //padding-left: 5px;
-        //padding-left: 3px;
+        padding-left: 3px;
       }
       &__b, &__f  {
         padding-left: 20px;

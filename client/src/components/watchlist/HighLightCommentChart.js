@@ -1,16 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Chart from "react-google-charts";
-import { green, red } from "ansi-colors";
 
-// Ref : https://developers.google.com/chart/interactive/docs/gallery/candlestickchart#Waterfall
-var dataold = [
-  ['Year', 'Sales', 'Expenses'],
-  ['2004',  1000,      400],
-  ['2005',  1170,      460],
-  ['2006',  660,       1120],
-  ['2007',  1030,      540]
-];
 
 const data = [
   ["Type",            "29-Sep-218",  { role: 'annotation'},     { role: 'style' },                                      "31-Oct-2018",                            { role: 'annotation'},  { role: 'style' } ],
@@ -79,8 +70,7 @@ const options = {
     viewWindow: {
       min: 0,
       max: 1350,
-  },
-  
+    }
   },
   chartArea:{left:20,top:0,width:"90%", height:"100%"},
   tooltip : {trigger: 'none'}
@@ -93,7 +83,7 @@ class HighLightCommentChart extends React.Component {
         <Chart
           chartType="ColumnChart"
           width="400px"
-          height="130px"
+          height="129px"
           data={data}
           options={options}
         />
