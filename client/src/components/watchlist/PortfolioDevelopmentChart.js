@@ -16,10 +16,10 @@ const data = [
       {role: 'annotation'}, {role:'style'} 
   ],
   
-  ['Current', current,'opacity: 1',		0,'opacity: 0', 	0,'opacity: 0', 	0,'opacity: 0',   current/100 + 'bn', 'fill-color: #63A74A'],
+  ['Oct-2018', current,'opacity: 1',		0,'opacity: 0', 	0,'opacity: 0', 	0,'opacity: 0',   current/100 + 'bn', 'fill-color: #63A74A'],
   ['Increase',current,'opacity: 0', 	increase,'opacity: 1', 	0,'opacity: 0', 	0,'opacity: 0',   increase/100 + 'bn', 'fill-color: #63A74A'],
-  ['Decrease', (current + increase) - decrease ,'opacity: 0', 		0,'opacity: 1', 	decrease,'opacity: 1', 	0,'opacity: 0',   decrease/100 + 'bn', 'fill-color: #63A74A'],
-  ['Previous', previous,'opacity: 1',		0,'opacity: 0', 	0,'opacity: 0', 	0,'opacity: 1',   previous/100 + 'bn', 'fill-color: #63A74A'],
+  ['Decrease', (current + increase) - decrease ,'opacity: 0', 0,'opacity: 0', 	decrease,'opacity: 1', 	0,'opacity: 0',   decrease/100 + 'bn', 'fill-color: #63A74A'],
+  ['Sep-2018', 0,'opacity: 0',		0,'opacity: 0', 	0,'opacity: 0', 	previous,'opacity: 1',   previous/100 + 'bn', 'fill-color: #63A74A'],
 ];
 
 
@@ -28,11 +28,12 @@ const options = {
   legend: 'none',
 
   annotations: {
+    alwaysOutside: true,
     textStyle: {
       // bold: true,
       // The color of the text.
       color: 'black',
-      fontSize: 7
+      fontSize: 8
     },
     stem: {
       color: 'none',
@@ -40,16 +41,15 @@ const options = {
     }
   },
   isStacked: true,
-  chartArea:{left:10,top:0,width:"90%", height:"90%"},
+  chartArea:{left:30,top:0,width:"100%", height:"90%"},
   tooltip : {trigger: 'none'},
   bar: { groupWidth: "80%" },
   backgroundColor: { fill:'transparent' },
-  baselineColor: 'none',
+  baselineColor: 'grey',
   
-  hAxis: {
-    //textPosition: 'none',
+  hAxis : { 
     textStyle : {
-        fontSize: 7
+        fontSize: 8 // or the number you want
     }
   },
 
@@ -79,7 +79,7 @@ const options = {
       min: 0,
       max: 160,
     }
-  },
+  }
 };
 
 class PortfolioDevelopmentChart extends React.Component {
@@ -88,8 +88,8 @@ class PortfolioDevelopmentChart extends React.Component {
       <div className="App">
         <Chart
           chartType="ColumnChart"
-          width="270px"
-          height="129px"
+          width="245px"
+          height="150px"
           data={data}
           options={options}
         />

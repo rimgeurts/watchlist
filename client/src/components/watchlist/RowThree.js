@@ -8,6 +8,11 @@ import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
 import HighLightCommentChart from './HighLightCommentChart';
 import PortfolioDevelopmentChart from './PortfolioDevelopmentChart';
+import PortfolioDevelopmentTable from './PortfolioDevelopmentTable';
+import '../../styles/components/PortfolioDevelopmentTable.scss';
+import TenorProfileChart from './TenorProfileChart';
+import TenorProfileTable from './TenorProfileTable';
+import TopEntitiesTable from './TopEntitiesTable';
 
 
 class RowThree extends React.Component {
@@ -20,6 +25,7 @@ class RowThree extends React.Component {
                             <div className="card__side card__side--size-large card__side--front-x">
                                  <p>Portfolio Development (Net Limits)</p>                                   
                                  <PortfolioDevelopmentChart /> 
+                                 <PortfolioDevelopmentTable />
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
@@ -29,8 +35,10 @@ class RowThree extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                    <p>Portfolio Development (Net Limits)</p>                                   
-                                    <HighLightCommentChart /> 
+                                    <p>Tenor Profile (Gross Limits)</p>                                   
+                                    <TenorProfileChart /> 
+                                    <TenorProfileTable />
+
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
@@ -43,7 +51,8 @@ class RowThree extends React.Component {
                                 <div className="header">
                                     <div className="">        
                                     </div>
-                                    <p className=""> Watchlist </p>
+                                    <p className=""> Top Entities </p>
+                                    <TopEntitiesTable />
                                 </div>
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">

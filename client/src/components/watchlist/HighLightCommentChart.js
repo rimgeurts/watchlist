@@ -13,14 +13,14 @@ const data = [
 
 const options = {
   legend: 'none',
-  baselineColor: 'none',
+  baselineColor: 'grey',
   annotations: {
     alwaysOutside: true,
     highContrast: true,  // default is true, but be sure
     textStyle: {
       bold: false,
       color: 'grey',
-      fontSize: 7
+      fontSize: 8
     }},
   bar: { groupWidth: "75%" },
   backgroundColor: { fill:'transparent' },
@@ -28,7 +28,7 @@ const options = {
   hAxis: {
     //textPosition: 'none',
     textStyle : {
-        fontSize: 7
+        fontSize: 8
     },
   },
   
