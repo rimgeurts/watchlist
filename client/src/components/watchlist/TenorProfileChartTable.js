@@ -5,10 +5,10 @@ import { fetchStreams } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
-import '../../styles/components/TenorProfileTable.scss'
+import '../../styles/components/TenorProfileChartTable.scss'
 
 
-class TenorProfileTable extends React.Component {
+class TenorProfileChartTable extends React.Component {
 
     render() {
         return (
@@ -23,4 +23,4 @@ class TenorProfileTable extends React.Component {
     }
 }
 
-export default TenorProfileTable;
+export default TenorProfileChartTable;

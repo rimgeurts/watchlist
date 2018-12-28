@@ -5,11 +5,11 @@ import { fetchStreams } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
-import '../../styles/components/PortfolioDevelopmentTable.scss'
+import '../../styles/components/PortfolioDevelopmentChartTable.scss'
 
 
 
-class PortfolioDevelopmentTable extends React.Component {
+class PortfolioDevelopmentChartTable extends React.Component {
 
     render() {
         return (
@@ -24,4 +24,4 @@ class PortfolioDevelopmentTable extends React.Component {
     }
 }
 
-export default PortfolioDevelopmentTable;
+export default PortfolioDevelopmentChartTable;

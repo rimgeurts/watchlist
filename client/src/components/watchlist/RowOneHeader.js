@@ -93,12 +93,12 @@ class RowOneHeader extends React.Component {
                             <div className="card">
                         <div className="card__side card__side--front-y">
                         <div className="card card__header"> Up / Downgrade</div>
-                            <div class="row-one row-one__up-downgrade">
-                                <div class="row-one row-one__up-downgrade__item">
+                            <div className="row-one row-one__up-downgrade">
+                                <div className="row-one row-one__up-downgrade__item">
                                 <div className="row-one row-one__current"> 2.3x </div>
                                 <div className="row-one row-one__previous-month">Net Limit</div>
                                 </div>
-                                <div class="row-one row-one__up-downgrade__item">
+                                <div className="row-one row-one__up-downgrade__item">
                                 <div className="row-one row-one__current"> 1.2x</div>
                                 <div className="row-one row-one__previous-month">Entities</div>
                                 </div>    

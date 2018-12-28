@@ -5,13 +5,11 @@ import { fetchStreams } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
-import Waterfall from './Waterfall';
-import HighLightCommentChart from './HighLightCommentChart';
 import PortfolioDevelopmentChart from './PortfolioDevelopmentChart';
-import PortfolioDevelopmentTable from './PortfolioDevelopmentTable';
-import '../../styles/components/PortfolioDevelopmentTable.scss';
+import PortfolioDevelopmentChartTable from './PortfolioDevelopmentChartTable';
+import '../../styles/components/PortfolioDevelopmentChartTable.scss';
 import TenorProfileChart from './TenorProfileChart';
-import TenorProfileTable from './TenorProfileTable';
+import TenorProfileChartTable from './TenorProfileChartTable';
 import TopEntitiesTable from './TopEntitiesTable';
 
 
@@ -25,7 +23,7 @@ class RowThree extends React.Component {
                             <div className="card__side card__side--size-large card__side--front-x">
                                  <p className="card card__header">Portfolio Development (Net Limits)</p>                                   
                                  <PortfolioDevelopmentChart /> 
-                                 <PortfolioDevelopmentTable />
+                                 <PortfolioDevelopmentChartTable />
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
@@ -37,7 +35,7 @@ class RowThree extends React.Component {
                             <div className="card__side card__side--size-large card__side--front-x">
                                     <p className="card card__header">Tenor Profile (Gross Limits)</p>                                   
                                     <TenorProfileChart /> 
-                                    <TenorProfileTable />
+                                    <TenorProfileChartTable />
 
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">

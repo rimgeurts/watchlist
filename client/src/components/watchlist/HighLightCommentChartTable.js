@@ -5,11 +5,11 @@ import { fetchStreams } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
-import '../../styles/components/HighLightCommentTable.scss'
+import '../../styles/components/HighLightCommentChartTable.scss'
 
 
 
-class HighlightCommentTable extends React.Component {
+class HighlightCommentChartTable extends React.Component {
 
     render() {
         return (
@@ -31,4 +31,4 @@ class HighlightCommentTable extends React.Component {
     }
 }
 
-export default HighlightCommentTable;
+export default HighlightCommentChartTable;

@@ -7,7 +7,7 @@ import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
 import HighLightCommentChart from './HighLightCommentChart';
-import HighLightCommentTable from './HighLightCommentTable';
+import HighLightCommentChartTable from './HighLightCommentChartTable';
 
 
 class RowTwo extends React.Component {
@@ -30,7 +30,7 @@ class RowTwo extends React.Component {
                             <div className="card__side card__side--size-large card__side--front-x">
                                     <p className="card card__header">Sovereign / Sub-sovereign</p>                                   
                                     <HighLightCommentChart /> 
-                                    <HighLightCommentTable /> 
+                                    <HighLightCommentChartTable /> 
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
