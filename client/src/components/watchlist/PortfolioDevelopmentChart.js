@@ -41,7 +41,7 @@ const options = {
     }
   },
   isStacked: true,
-  chartArea:{left:30,top:0,width:"100%", height:"90%"},
+  chartArea:{left:30,top:0,width:"100%", height:"85%"},
   tooltip : {trigger: 'none'},
   bar: { groupWidth: "80%" },
   backgroundColor: { fill:'transparent' },
@@ -89,7 +89,7 @@ class PortfolioDevelopmentChart extends React.Component {
         <Chart
           chartType="ColumnChart"
           width="245px"
-          height="150px"
+          height="117px"
           data={data}
           options={options}
         />

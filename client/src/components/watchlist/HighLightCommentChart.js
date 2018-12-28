@@ -72,7 +72,7 @@ const options = {
       max: 1350,
     }
   },
-  chartArea:{left:20,top:0,width:"90%", height:"100%"},
+  chartArea:{left:20,top:10,width:"90%", height:"90%"},
   tooltip : {trigger: 'none'}
 };
 
@@ -83,7 +83,7 @@ class HighLightCommentChart extends React.Component {
         <Chart
           chartType="ColumnChart"
           width="400px"
-          height="129px"
+          height="92px"
           data={data}
           options={options}
         />

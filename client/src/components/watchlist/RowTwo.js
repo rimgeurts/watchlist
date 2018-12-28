@@ -18,7 +18,7 @@ class RowTwo extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                 <p>Highlight Comments</p>                                   
+                                 <p className="card card__header">Highlight Comments</p>                                   
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back
@@ -28,11 +28,9 @@ class RowTwo extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                    <p>Sovereign / Sub-sovereign</p>                                   
+                                    <p className="card card__header">Sovereign / Sub-sovereign</p>                                   
                                     <HighLightCommentChart /> 
                                     <HighLightCommentTable /> 
-                                    
-
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back

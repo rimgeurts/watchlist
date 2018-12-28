@@ -23,7 +23,7 @@ class RowThree extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                 <p>Portfolio Development (Net Limits)</p>                                   
+                                 <p className="card card__header">Portfolio Development (Net Limits)</p>                                   
                                  <PortfolioDevelopmentChart /> 
                                  <PortfolioDevelopmentTable />
                             </div>
@@ -35,7 +35,7 @@ class RowThree extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                    <p>Tenor Profile (Gross Limits)</p>                                   
+                                    <p className="card card__header">Tenor Profile (Gross Limits)</p>                                   
                                     <TenorProfileChart /> 
                                     <TenorProfileTable />
 
@@ -49,9 +49,7 @@ class RowThree extends React.Component {
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
                                 <div className="header">
-                                    <div className="">        
-                                    </div>
-                                    <p className=""> Top Entities </p>
+                                    <p className="card card__header"> Top Entities </p>
                                     <TopEntitiesTable />
                                 </div>
                             </div>

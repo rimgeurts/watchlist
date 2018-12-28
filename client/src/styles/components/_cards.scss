@@ -12,11 +12,19 @@
     perspective: 30rem;
     position: relative;
 
+    &__header {
+        // background-color: rgba(128, 128, 128, 0.075);
+        // color: black;
+        // border: 1px solid rgba(128, 128, 128, 0.651);
+        // border-radius: 5px;
+        margin-top: 2px;
+    }
+
     &__side {
             height: 5rem;
             
             &--size-large {
-                height: 12rem;
+                height: 9rem;
             } 
 
             transition: transform 0.4s ease-in-out;

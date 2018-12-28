@@ -43,7 +43,7 @@ const options = {
     }
   },
   isStacked: true,
-  chartArea:{left:30,top:30,width:"100%", height:"70%"},
+  chartArea:{left:30,top:20,width:"100%", height:"70%"},
   tooltip : {trigger: 'none'},
   bar: { groupWidth: "80%" },
   backgroundColor: { fill:'transparent' },
@@ -137,7 +137,7 @@ class TenorProfileChart extends React.Component {
         <Chart
           chartType="ColumnChart"
           width="245px"
-          height="150px"
+          height="115px"
           data={data}
           options={options}
         />
