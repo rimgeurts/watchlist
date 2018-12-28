@@ -1,13 +1,13 @@
 .container-8-columns {
     display: grid;
-    grid-template-rows: 80px;
+    grid-template-rows: 74px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     }
 
 .container-1-columns {
     display: grid;
-    grid-template-rows: 80px;
+    grid-template-rows: 74px;
     grid-template-columns: 1fr;
     grid-gap: 5px;
     }

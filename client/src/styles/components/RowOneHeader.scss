@@ -1,0 +1,112 @@
+.row-one {
+    &__title {
+        margin-top: 3px;
+    }
+
+    &__current {
+        color: #383535;
+        font-size: 15px;
+        font-weight:bold;
+        margin-top:5px;
+        padding:0;
+    }
+
+    &__previous-month {
+        padding-top: 8px;
+        //margin-top: 3px;
+        font-size: 8px;
+        text-align: center;
+    }
+
+    &__alert {
+        &--red {
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            //border: 1px solid none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgba(183, 28, 28, .8);
+            color: white;
+            padding: 4px;
+        }      
+        &--green {
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            //border: 1px solid none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgba(53, 122, 56, .8);
+            color: white;
+            padding: 4px;
+        }      
+        &--amber {
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            //border: 1px solid none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgba(223, 121, 5, 0.8);
+            color: white;
+            padding: 4px;
+        }      
+        &--no-alert {
+            font-size: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-bottom: 4px;
+            //border: 1px solid none;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            background-color: rgba(104, 104, 104,.8);
+            color: white;
+            padding: 4px;
+        }      
+    }
+    &__amber-alert {
+        margin-top: 3px;
+        
+        padding: 3px;
+    }
+    &__green-alert {
+        margin-top: 3px;
+        
+        padding: 3px;
+    }
+    &__no-alert {
+        margin-top: 3px;
+        padding: 3px;
+    }
+
+    &__up-downgrade {
+      display: inline-flex;
+      
+      &__item {
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-top: 0 px;
+          margin-bottom: 0px;
+      }
+    }
+} 
