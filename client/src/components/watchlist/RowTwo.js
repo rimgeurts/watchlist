@@ -8,6 +8,7 @@ import '../../styles/layout/_layout.scss';
 import Waterfall from './Waterfall';
 import HighLightCommentChart from './HighLightCommentChart';
 import HighLightCommentChartTable from './HighLightCommentChartTable';
+import HighlightCommentsTable from './HighlightCommentsTable'
 
 
 class RowTwo extends React.Component {
@@ -18,7 +19,8 @@ class RowTwo extends React.Component {
                     <div className="item item--1">
                         <div className="card">
                             <div className="card__side card__side--size-large card__side--front-x">
-                                 <p className="card card__header">Highlight Comments</p>                                   
+                                 <p className="card card__header">Highlight Comments</p>    
+                                 <HighlightCommentsTable />                               
                             </div>
                             <div className="card__side card__side--size-large card__side--back card__side--back-x">
                                 Back

@@ -5,37 +5,40 @@ import { fetchStreams } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
-import '../../styles/components/TopEntitiesTable.scss'
+import '../../styles/components/HighlightCommentsTable.scss'
 
 
 
 class HighlightCommentTable extends React.Component {
 
     render() {
-        return (
-            <div className="top-entities-table-wrapper">
-                <div className="top-entities-table-wrapper__header">Top Entities</div>
-                <div className="top-entities-table-wrapper__header">Net Limit</div>
-                <div className="top-entities-table-wrapper__header">Net Util</div>
-                <div className="top-entities-table-wrapper__box top-entities-table-wrapper__box__heading">Company A</div>
-                <div className="top-entities-table-wrapper__box">202bn</div>
-                <div className="top-entities-table-wrapper__box">103m</div>
-                <div className="top-entities-table-wrapper__box top-entities-table-wrapper__box__heading">Company B</div>
-                <div className="top-entities-table-wrapper__box">25m</div>
-                <div className="top-entities-table-wrapper__box">55m</div>
-                <div className="top-entities-table-wrapper__box top-entities-table-wrapper__box__heading">Company C</div>
-                <div className="top-entities-table-wrapper__box">64m</div>
-                <div className="top-entities-table-wrapper__box">10m</div>
-                <div className="top-entities-table-wrapper__box top-entities-table-wrapper__box__heading">Company C</div>
-                <div className="top-entities-table-wrapper__box">64m</div>
-                <div className="top-entities-table-wrapper__box">10m</div>
-                <div className="top-entities-table-wrapper__box top-entities-table-wrapper__box__heading">Company D</div>
-                <div className="top-entities-table-wrapper__box">43m</div>
-                <div className="top-entities-table-wrapper__box">12m</div>
-                <div className="top-entities-table-wrapper__total--no-border"></div>
-                <div className="top-entities-table-wrapper__total">43%</div>
-                <div className="top-entities-table-wrapper__total">12%</div>
-            </div>
+        return ( 
+                <div className="comments-table-header">
+                    <ul className="comments-table-wrapper">
+                        <li className="comments-table-wrapper comments-table-wrapper__item"> 
+                            Overall net limit increase amounts to 2.02bn with 81.2% of gross 
+                            increases driven by 10 groups
+                        </li>
+                        <li className="comments-table-wrapper comments-table-wrapper__item">
+                            Very significant (66%) concentration to Top 10 groups (out of 123) within 
+                            selected portfolio, with only 0% rated IG
+                        </li>
+                        <li className="comments-table-wrapper comments-table-wrapper__item">
+                            The watch list exposure is at 16%, visibly deteriorating vs 31-jul-2018
+                        </li> 
+                        <li className="comments-table-wrapper comments-table-wrapper__item">
+                            Majority (79%) of limits are less than 5 years. Top 3 industries account 
+                            for 66% of l/t limits
+                        </li> 
+                        <li className="comments-table-wrapper comments-table-wrapper__item">
+                            Credit RWA shows a visible increase of 14% to now 2.4bn
+                        </li> 
+                        <li className="comments-table-wrapper comments-table-wrapper__item">
+                            The overall relative EL ratio of 1.4% is elevated and has decreased 
+                            in absolute terms by 19m
+                        </li> 
+                    </ul>
+                </div>
         )
     }
 }

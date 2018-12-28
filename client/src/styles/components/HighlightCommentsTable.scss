@@ -1,0 +1,30 @@
+.comments-table-header {
+  margin-top: 15px;
+  margin-left: 0;
+  padding: 0;
+}
+.comments-table-wrapper {
+      cursor: pointer;
+      text-align: left;
+      font-size: 8px;
+      padding: 0;
+      margin-left: 15px;
+      margin-right: 10px;
+      transition: 0.1s;
+      //margin-bottom: 20px;
+      &__item {
+        &:hover {
+          
+          transition-delay:0.3s;
+          border: solid 1px;
+          border-color: rgba(0, 87, 250, 0.486);
+          border-radius: 5px;
+          background-color: rgba(0, 87, 250, 0.13);
+          //border-width: 1px;
+          padding: 3px;
+          font-size: 12px;
+          //margin: 10px;
+
+          }
+      }
+    }
