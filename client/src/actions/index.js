@@ -1,4 +1,5 @@
 import streams from '../apis/streams';
+import bo from '../apis/bo';
 import history from '../history';
 import {
     SIGN_IN, 
@@ -9,6 +10,23 @@ import {
     DELETE_STREAM,
     EDIT_STREAM
 } from './types';
+
+
+
+export const fetchBOdata = (reportElement) => async dispatch => {
+    if (reportElement) {
+        console.log('attempting to fetch report element: ' + reportElement)
+        const response = await bo.get('/documents/5712/reports/36/elements/'+ reportElement + '/dataset');
+        //console.log('BO response: ', response.data.dataset.row);
+        //dispatch({type: FETCH_STREAMS, payload: response.data})
+    }
+}
+
+
+
+
+
+
 
 export const signIn = (userId) => {
     return{

@@ -1,15 +1,23 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { fetchStreams } from '../../actions'
+import { fetchBOdata } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
 import '../../styles/components/HighlightCommentsTable.scss'
 
 
-
 class HighlightCommentTable extends React.Component {
+    
+    componentDidMount() {
+        const reportElement = '45';
+        this.getBOdata(reportElement)
+    }
+
+    getBOdata = (reportElement) => {
+        this.props.fetchBOdata(reportElement)
+    }
 
     render() {
         return ( 
@@ -43,4 +51,4 @@ class HighlightCommentTable extends React.Component {
     }
 }
 
-export default HighlightCommentTable;
+export default connect(null, { fetchBOdata })(HighlightCommentTable);

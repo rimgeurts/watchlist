@@ -25,9 +25,46 @@ body {
   @media print {
     body,
     page {
-      margin-left: 0;
+      margin: 0;
       box-shadow: 0;
+      padding: 0;
     }
+
+    .page-size-a4 {
+      margin: 0;
+      box-shadow: 0;
+      background-image: none;
+      //background-color: rgb(3, 19, 107);
+      background-color: rgb(75, 75, 75);
+    }
+
+    .card {  
+      &__side {
+              opacity: 1;
+              box-shadow: none;
+              // FLIP CARD X-AXIS ROTATION
+              &--front-x {
+                  background: rgb(219, 220, 235);
+              }
+  
+              &--back-x {
+                  display:none;
+                  transform: rotateX(180deg);
+                  background-color: rgb(168, 167, 165);                     
+              }  
+           
+              // FLIP CARD Y-AXIS ROTATION
+              &--front-y {
+                  background: rgb(219, 220, 235);
+              }
+  
+              &--back-y {
+                  display:none;
+                  opacity: 1;
+                  background-color: rgb(168, 167, 165);                    
+              }
+        }
+      }
   }
 
   .main-layout-container {
