@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { fetchBOdata } from '../../actions'
+import { fetchData } from '../../actions'
 import '../../styles/layout/_grids.scss';
 import '../../styles/components/_cards.scss';
 import '../../styles/layout/_layout.scss';
@@ -11,7 +11,7 @@ import '../../styles/components/HighLightCommentChartTable.scss'
 
 class HighlightCommentChartTable extends React.Component {
     componentDidMount() {
-        const response = this.props.fetchBOdata();
+        const response = this.props.fetchData();
         console.log(response)
     }
 
@@ -35,4 +35,4 @@ class HighlightCommentChartTable extends React.Component {
     }
 }
 
-export default connect(null, { fetchBOdata })(HighlightCommentChartTable)
+export default connect(null, { fetchData })(HighlightCommentChartTable)

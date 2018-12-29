@@ -13,12 +13,13 @@ import {
 
 
 
-export const fetchBOdata = (reportElement) => async dispatch => {
+export const fetchData = (reportElement, widgetCode) => async dispatch => {
     if (reportElement) {
-        console.log('attempting to fetch report element: ' + reportElement)
+        console.log('attempting to fetch report element: ' + reportElement + " widget: " + widgetCode)
         const response = await bo.get('/documents/5712/reports/36/elements/'+ reportElement + '/dataset');
-        //console.log('BO response: ', response.data.dataset.row);
-        //dispatch({type: FETCH_STREAMS, payload: response.data})
+        
+        const payload = response.data.dataset.row;
+        dispatch({type: 'GET_DATA', widget: widgetCode, element: reportElement, payload: payload})
     }
 }
 
