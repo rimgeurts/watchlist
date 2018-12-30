@@ -4,27 +4,77 @@
   padding: 0;
 }
 .comments-table-wrapper {
-      cursor: pointer;
+  cursor: pointer;
+  text-align: left;
+  font-size: 8px;
+  padding: 0;
+  margin-left: 15px;
+  margin-right: 10px;
+  transition: 0.1s;
+  //margin-bottom: 20px;
+  &__item {
+    &:hover {
+      
+      transition-delay:0.3s;
+      border: solid 1px;
+      border-color: rgba(0, 87, 250, 0.486);
+      border-radius: 5px;
+      background-color: rgba(0, 87, 250, 0.13);
+      //border-width: 1px;
+      padding: px;
+      font-size: 12px;
+      //margin: 10px;
+
+      }
+  }
+}
+
+
+.error-box {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -5px 5px 35px 3px rgba(0, 0, 0, .4);
+  background-color: rgb(146, 16, 16);
+  animation: example 1s ease-in-out;
+  
+  .error {
+    &__icon {
+      position: absolute;
+      fill: white;
+      top:12px;
+      left:35px;
+    }
+  
+    &__title {
+      margin-bottom: 5px;
+      border: 1px solid white;
+      border-radius: 5px;
+      padding: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    &__text {
       text-align: left;
       font-size: 8px;
-      padding: 0;
-      margin-left: 15px;
-      margin-right: 10px;
-      transition: 0.1s;
-      //margin-bottom: 20px;
-      &__item {
-        &:hover {
-          
-          transition-delay:0.3s;
-          border: solid 1px;
-          border-color: rgba(0, 87, 250, 0.486);
-          border-radius: 5px;
-          background-color: rgba(0, 87, 250, 0.13);
-          //border-width: 1px;
-          padding: px;
-          font-size: 12px;
-          //margin: 10px;
-
-          }
-      }
+      padding-left: 25px;
+      padding-right: 25px;
     }
+  }
+}
+
+
+
+@keyframes example {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+
+  }
+}

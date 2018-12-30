@@ -7,11 +7,13 @@ import RowTwo from '../components/watchlist/RowTwo';
 import Waterfall from '../components/watchlist/Waterfall';
 import history from '../history';
 import '../styles/layout/_layout.scss'
+import SideBar from '../components/SideBar'
 
 const App = () => {
     return (
         <div className="page-size-a4">
             <div className="main-layout-container">
+                <SideBar />
                 <RowZeroHeader />
                 <RowOneHeader />       
                 <RowTwo />       
