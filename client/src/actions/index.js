@@ -22,7 +22,8 @@ export const fetchData = (reportElement, widgetCode, reportTabId) => async dispa
         const payload = response.data.dataset.row;
         dispatch({type: 'GET_DATA_SUCCESS', widget: widgetCode, tab: reportTabId, element: reportElement, payload: payload})
         }catch(error) {
-            dispatch({type: 'GET_DATA_ERROR', widget: widgetCode, tab: reportTabId, element: reportElement, payload: error.response.data})
+            console.log('error is:', error)
+            dispatch({type: 'GET_DATA_ERROR', widget: widgetCode, tab: reportTabId, element: reportElement, payload: error.response})
         }
     }
 }

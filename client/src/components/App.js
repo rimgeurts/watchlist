@@ -8,11 +8,13 @@ import Waterfall from '../components/watchlist/Waterfall';
 import history from '../history';
 import '../styles/layout/_layout.scss'
 import SideBar from '../components/SideBar'
+import TopBar from '../components/TopBar'
 
 const App = () => {
     return (
         <div className="page-size-a4">
             <div className="main-layout-container">
+                <TopBar />   
                 <SideBar />
                 <RowZeroHeader />
                 <RowOneHeader />       

@@ -24,7 +24,7 @@
             height: 74px;
             
             &--size-large {
-                height: 9rem;
+                height: 143px;
             } 
 
             transition: transform 0.4s ease-in-out;
@@ -36,7 +36,7 @@
             border-radius: 5px;
             box-shadow: -5px 5px 35px 3px rgba(0, 0, 0, .4);
             overflow: hidden;
-            opacity: 0.93;
+            opacity: 0.9;
             // FLIP CARD X-AXIS ROTATION
             &--front-x {
                 background: rgb(219, 220, 235);

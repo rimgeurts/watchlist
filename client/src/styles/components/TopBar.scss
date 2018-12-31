@@ -1,0 +1,40 @@
+
+/* navbar */
+/* sidebar */
+.topbar {
+    width: 2.5rem;
+    width:100%;
+    height: 3rem;
+    background-color: rgb(36, 36, 36);
+    position: fixed;
+    top:0rem;
+    left:0px;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .db-logo-grey {
+        margin-top: .3rem;
+        margin-left: 10px;
+        width: 130px;
+        height: 35px;
+        background-image: url('../images/dg-logo-grey.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+
+    
+    .logon {
+        margin-top: 1.2rem;
+        color: white;
+    }
+    
+}
+
+
+
+/* end of sidebar */
+/* navigation */
+

@@ -14,6 +14,9 @@ class HighlightCommentTable extends React.Component {
         
     }
 
+    handlePrint(){
+        window.print();
+    }
 
 
     render() {
@@ -28,31 +31,6 @@ class HighlightCommentTable extends React.Component {
                             <div className="line line-3"></div>
                         </div>
                     </label>
-                    <ul className="social-icons-list">
-                        <li>
-                            <a href="#" className="social-link">
-                                    <i className="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                                <a href="#" className="social-link">
-                                        <i className="fab fa-twitter"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="#" className="social-link">
-                                        <i className="fab fa-google-plus-g"></i>
-                                </a>
-                        </li>
-                        <li>
-                                <a href="#" className="social-link">
-                                        <i className="fab fa-instagram"></i>
-                                </a>
-                        </li>
-                    </ul>
-                    <div className="year">
-                        <p>2018</p>
-                    </div>
                 </div>
 
                 <nav className="navigation">
@@ -61,22 +39,13 @@ class HighlightCommentTable extends React.Component {
                     </div>
                     <ul className="navigation-list">
                             <li className="navigation-item">
-                                <a href="#" className="navigation-link">home</a>
+                                <a href="#" className="navigation-link"  onClick={this.handlePrint}>Print Report</a>
                             </li>
                             <li className="navigation-item">
-                                <a href="#" className="navigation-link">about us</a>
+                                <a href="#" className="navigation-link">Ratings Migration</a>
                             </li>
                             <li className="navigation-item">
-                                <a href="#" className="navigation-link">rooms</a>
-                            </li>
-                            <li className="navigation-item">
-                                <a href="#" className="navigation-link">events</a>
-                            </li>
-                            <li className="navigation-item">
-                                <a href="#" className="navigation-link">customers</a>
-                            </li>
-                            <li className="navigation-item">
-                                <a href="#" className="navigation-link">contact</a>
+                                <a href="#" className="navigation-link">dbRiB</a>
                             </li>
                     </ul>
                 </nav>
