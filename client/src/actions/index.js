@@ -1,5 +1,6 @@
 import streams from '../apis/streams';
 import bo from '../apis/bo';
+import axios from 'axios'
 import history from '../history';
 import {
     SIGN_IN, 
@@ -12,21 +13,57 @@ import {
 } from './types';
 
 
-
-export const fetchData = (reportElement, widgetCode, reportTabId) => async dispatch => {
+export const fetchData = (reportElement, widgetCode, reportTabId) => async (dispatch, getState) => {
+    const {isSignedIn} = getState().auth;
+    if(!isSignedIn) {
+        
+        login().then(fetchData())
+    }
     if (reportElement) {
         try {
-        //console.log('attempting to fetch report element: ' + reportElement + " widget: " + widgetCode)
-        const response = await bo.get('/documents/5712/reports/' + reportTabId + '/elements/'+ reportElement + '/dataset');
-        console.log("response: ", response)
+        const response = await bo.get('/raylight/v1/documents/5712/reports/' + reportTabId + '/elements/'+ reportElement + '/dataset',
+                                    { headers: { 'X-SAP-LOGONTOKEN': localStorage.getItem('logonToken')} });
+
         const payload = response.data.dataset.row;
         dispatch({type: 'GET_DATA_SUCCESS', widget: widgetCode, tab: reportTabId, element: reportElement, payload: payload})
         }catch(error) {
             console.log('error is:', error)
-            dispatch({type: 'GET_DATA_ERROR', widget: widgetCode, tab: reportTabId, element: reportElement, payload: error.response})
+            dispatch({type: 'GET_DATA_ERROR', widget: widgetCode, tab: reportTabId, element: reportElement, payload: error.response.data})
         }
     }
 }
+
+
+export const login = () => async dispatch => {
+    
+    const data = {
+        password: 'Burung79!',
+        clientType: '',
+        auth: 'secEnterprise',
+        userName: 'administrator'
+    }
+        try {
+        //console.log('attempting to fetch report element: ' + reportElement + " widget: " + widgetCode)
+        const response = await bo.post('/logon/long', data, {
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+        )
+        if (response.status === 200) {
+            console.log(`"${response.data.logonToken}"`)
+            localStorage.setItem('logonToken', response.data.logonToken)
+            dispatch({type: SIGN_IN})
+        }
+
+        }catch(error) {
+            console.log('error is:', error)
+           // dispatch({type: 'GET_DATA_ERROR', widget: widgetCode, tab: reportTabId, element: reportElement, payload: error.response.data})
+        }
+}
+
+
+
 
 
 

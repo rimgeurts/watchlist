@@ -1,0 +1,32 @@
+.account{
+    //margin: 0.5rem;
+    margin-top: .5rem;
+    color: white;
+    transition: .1s;
+
+
+    .account-icon {
+        display: inline-flex;
+        vertical-align: middle;
+        transition: 1s;
+
+        &:hover{
+            color:rgb(172, 172, 172);
+        }
+    }
+
+    .account-text {
+        display: inline-flex;
+        vertical-align: middle;
+        padding-left: 0rem;
+    }
+
+    .account-login-button {
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+    }
+}

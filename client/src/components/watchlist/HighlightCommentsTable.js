@@ -14,15 +14,21 @@ class HighlightCommentTable extends React.Component {
         const widgetCode = 'wl09';
         const reportTabId = '36'
         const reportElement = '45';
-
-        this.getBOdata(reportElement, widgetCode, reportTabId)
+        console.log('Component Updated: is signed in: ' + this.props.isSignedIn)
+        if (this.props.isSignedIn === true) {
+            this.getBOdata(reportElement, widgetCode, reportTabId)
+        }
     }
+
 
     getBOdata = (reportElement, widgetCode, reportTabId) => {
         this.props.fetchData(reportElement, widgetCode, reportTabId)
     }
 
     renderList() {
+
+
+
         const data = this.props.items.wl09_36_45
         const error = this.props.items.error;
         
@@ -68,8 +74,8 @@ class HighlightCommentTable extends React.Component {
 const mapStateToProps = (state) => {
 
     return {
-        //filters: state.filters, posts: state.posts
-        items: state.items
+        items: state.items,
+        isSignedIn: state.auth.isSignedIn
     }
 }
 

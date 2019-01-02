@@ -10,14 +10,17 @@
     top:0rem;
     left:0px;
     z-index: 20;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    
+    .topbar-menu {
+        display: grid;
+        grid-template-columns: 29.5rem 10rem 10rem 10rem 10rem;
+        grid-template-rows: 2rem;
+    }
 
     .db-logo-grey {
-        margin-top: .3rem;
+        margin-top: 0rem;
         margin-left: 10px;
-        width: 130px;
+        width: 120px;
         height: 35px;
         background-image: url('../images/dg-logo-grey.png');
         background-size: contain;
@@ -27,8 +30,9 @@
 
     
     .logon {
-        margin-top: 1.2rem;
-        color: white;
+        margin: 1rem;
+        text-align: bottom;
+        color: white;   
     }
     
 }
